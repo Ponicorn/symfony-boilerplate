@@ -1,3 +1,4 @@
-import './style/style.scss'
+import './style/style.scss';
 
-console.log('Hello from app.js') 
+// eslint-disable-next-line no-console
+console.log('Hello from app.js');

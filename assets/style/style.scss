@@ -1,0 +1,11 @@
+@import 'colors';
+@import 'base';
+@import 'navbar';
+
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    padding: 1em;
+    margin: 0 auto;
+}

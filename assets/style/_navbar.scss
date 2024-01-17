@@ -1,0 +1,15 @@
+.navbar {
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    background-color: $main_color;
+    border-bottom: 4px solid $accent_color;
+
+    a {
+        color: $font_color_invert;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin: 0 1em;
+    }
+}

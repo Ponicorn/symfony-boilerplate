@@ -44,4 +44,21 @@ Commande pour voir la liste des make disponible
 docker compose run --rm php bin/console make
 ```
 
+## Lancer les linters
+Nous avons dans ce projets 3 linters: phpstan, phpcs et eslint.
+Pour les lancer il faut utiliser les commandes suivantes:
+```bash
+docker compose run --rm php composer run-script phpstan
+docker compose run --rm php composer run-script phpcs
+docker compose run --rm vite npm run lint
+```  
+Il existe également 2 commandes pour corriger automatiquement les erreurs de phpcs et eslint
+```bash
+docker compose run --rm php composer run-script phpcs:fix
+docker compose run --rm vite npm run lint:fix
+```
 
+Les différente documentation des linters:   
+- phpstan : https://phpstan.org/
+- phpcs : https://github.com/squizlabs/PHP_CodeSniffer
+- eslint : https://eslint.org/
